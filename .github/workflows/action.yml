@@ -11,10 +11,10 @@ jobs:
     steps:
 
     - name: Checkout Source
-      uses: actions/checkout@v4.1.1
+      uses: actions/checkout@v7.0.1
 
     - name: Initialize Nix
-      uses: cachix/install-nix-action@v25
+      uses: cachix/install-nix-action@v31.11.1
 
     - name: Build Site
       run: nix build
@@ -23,7 +23,7 @@ jobs:
       run: cp -r -L --no-preserve=mode,ownership result/site artifact
 
     - name: Upload Artifact
-      uses: actions/upload-pages-artifact@v3.0.1
+      uses: actions/upload-pages-artifact@v5.0.0
       with:
         path: artifact
 
@@ -36,4 +36,4 @@ jobs:
     steps:
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4.0.4
+        uses: actions/deploy-pages@v5.0.0
