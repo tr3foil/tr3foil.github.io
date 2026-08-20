@@ -1,6 +1,6 @@
 {
 
-description = "pyrosite: my personal website";
+description = "cloverpad: my personal website";
 
 inputs = {
   nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
