@@ -18,11 +18,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1705133751,
-        "narHash": "sha256-rCIsyE80jgiOU78gCWN3A0wE0tR2GI5nH6MlS+HaaSQ=",
+        "lastModified": 1787135253,
+        "narHash": "sha256-RD2kNWCG+Bjo6h+JVjWVNntZs2GtRoeY2xHjts/FNkA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9b19f5e77dd906cb52dade0b7bd280339d2a1f3d",
+        "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
         "type": "github"
       },
       "original": {
@@ -48,29 +48,29 @@
         "type": "github"
       }
     },
-    "pyroscheme": {
+    "phosphor": {
       "inputs": {
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1708288899,
-        "narHash": "sha256-Dzz8Mc0RuPKEmnFz+Z2xLQtu8MqIRHF/kyDNxrxFWTM=",
-        "owner": "pyrotelekinetic",
-        "repo": "pyroscheme",
-        "rev": "49ed6ece84641396f51d31d47bcf1f19505d478f",
+        "lastModified": 1787252152,
+        "narHash": "sha256-NJtI0Afi/TZXktLEVHWsaJFXlsA/RzV5XRzEE4pZQxE=",
+        "owner": "tr3foil",
+        "repo": "phosphor",
+        "rev": "ccff1376cf1652fd6f15236c36f8ebd6f9651ec3",
         "type": "github"
       },
       "original": {
-        "owner": "pyrotelekinetic",
+        "owner": "tr3foil",
         "ref": "main",
-        "repo": "pyroscheme",
+        "repo": "phosphor",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "pyroscheme": "pyroscheme",
+        "phosphor": "phosphor",
         "yip": "yip"
       }
     },
@@ -81,13 +81,13 @@
       "locked": {
         "lastModified": 1707858316,
         "narHash": "sha256-sjJmezHNDNgwBnSq1Hm+LLF+5lwSblHuJ8ANGvaqpck=",
-        "owner": "pyrotelekinetic",
+        "owner": "tr3foil",
         "repo": "yip",
         "rev": "3ef04526e57f0f40d71a3a5a4615f3200ac2f38b",
         "type": "github"
       },
       "original": {
-        "owner": "pyrotelekinetic",
+        "owner": "tr3foil",
         "ref": "main",
         "repo": "yip",
         "type": "github"

@@ -4,11 +4,11 @@ description = "pyrosite: my personal website";
 
 inputs = {
   nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-  yip.url = "github:pyrotelekinetic/yip/main";
-  pyroscheme.url = "github:pyrotelekinetic/pyroscheme/main";
+  yip.url = "github:tr3foil/yip/main";
+  phosphor.url = "github:tr3foil/phosphor/main";
 };
 
-outputs = { self, nixpkgs, yip, pyroscheme }: let
+outputs = { self, nixpkgs, yip, phosphor }: let
   supportedSystems = nixpkgs.lib.systems.flakeExposed;
   allSystems = output: nixpkgs.lib.genAttrs supportedSystems
     (system: output nixpkgs.legacyPackages.${system});
@@ -29,7 +29,7 @@ in {
         mkdir -p $out/site;
         cp -r out/* $out/site;
         cp -r assets/ $out/site;
-        cp ${pyroscheme.packages.${pkgs.system}.css} $out/site/styles/colors.css
+        cp ${phosphor.packages.${pkgs.system}.css} $out/site/styles/colors.css
       '';
     };
   });
